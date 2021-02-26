@@ -1,7 +1,8 @@
-function printName(name) {
-  let msg = "hello";
-
-  console.log({ msg, name });
-  $("#header").html(msg + " " + name);
-}
-printName("");
+document.getElementById('textInput').addEventListener(
+ 'input',
+ function (e) {
+  var text = document.getElementById('textInput').value
+  console.log(text)
+ },
+ false
+)
